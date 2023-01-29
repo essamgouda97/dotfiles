@@ -5,8 +5,16 @@ set -gx TERM xterm-256color
 # theme
 set -g fish_prompt_pwd_dir_length 1
 set -g theme_display_user yes
-set -g theme_hide_hostname no
-set -g theme_hostname always
+set -g theme_display_hostname no
+set -g theme_hostname no
+set -g theme_display_time yes
+set -g theme_display_group no
+set -g theme_display_jobs no
+set -g theme_display_rw no
+set -g theme_display_jobs_always yes
+set -g theme_display_batt no
+set -g theme_display_batt_icon no
+set -g theme_color_user aa55ff
 
 # aliases
 alias ls "ls -p -G"
