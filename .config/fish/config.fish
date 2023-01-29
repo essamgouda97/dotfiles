@@ -23,12 +23,11 @@ alias ll "ls -l"
 alias lla "ll -A"
 alias g git
 alias config "/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME"
-command -qv nvim; alias vim nvim
+alias vim nvim
 
 set -gx EDITOR nvim
 
 set -gx PATH bin $PATH
-set -gx PATH ~/bin $PATH
 set -gx PATH ~/.local/bin $PATH
 
 switch (uname)
