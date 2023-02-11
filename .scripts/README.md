@@ -1,2 +1,2 @@
 ### Init
-- `curl -fsSL https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install | fish`
+- tested on nvim v0.8.3 
