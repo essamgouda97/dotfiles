@@ -49,8 +49,8 @@ local function save_profiles(threshold)
 end
 
 time([[Luarocks path setup]], true)
-local package_path_str = "/home/essamgouda97/.cache/nvim/packer_hererocks/2.1.0-beta3/share/lua/5.1/?.lua;/home/essamgouda97/.cache/nvim/packer_hererocks/2.1.0-beta3/share/lua/5.1/?/init.lua;/home/essamgouda97/.cache/nvim/packer_hererocks/2.1.0-beta3/lib/luarocks/rocks-5.1/?.lua;/home/essamgouda97/.cache/nvim/packer_hererocks/2.1.0-beta3/lib/luarocks/rocks-5.1/?/init.lua"
-local install_cpath_pattern = "/home/essamgouda97/.cache/nvim/packer_hererocks/2.1.0-beta3/lib/lua/5.1/?.so"
+local package_path_str = "/home/egouda/.cache/nvim/packer_hererocks/2.1.0-beta3/share/lua/5.1/?.lua;/home/egouda/.cache/nvim/packer_hererocks/2.1.0-beta3/share/lua/5.1/?/init.lua;/home/egouda/.cache/nvim/packer_hererocks/2.1.0-beta3/lib/luarocks/rocks-5.1/?.lua;/home/egouda/.cache/nvim/packer_hererocks/2.1.0-beta3/lib/luarocks/rocks-5.1/?/init.lua"
+local install_cpath_pattern = "/home/egouda/.cache/nvim/packer_hererocks/2.1.0-beta3/lib/lua/5.1/?.so"
 if not string.find(package.path, package_path_str, 1, true) then
   package.path = package.path .. ';' .. package_path_str
 end
@@ -76,57 +76,60 @@ time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
   ["colorbuddy.nvim"] = {
     loaded = true,
-    path = "/home/essamgouda97/.local/share/nvim/site/pack/packer/start/colorbuddy.nvim",
+    path = "/home/egouda/.local/share/nvim/site/pack/packer/start/colorbuddy.nvim",
     url = "https://github.com/tjdevries/colorbuddy.nvim"
   },
   ["impatient.nvim"] = {
     config = { "require('impatient')" },
     loaded = true,
-    path = "/home/essamgouda97/.local/share/nvim/site/pack/packer/start/impatient.nvim",
+    path = "/home/egouda/.local/share/nvim/site/pack/packer/start/impatient.nvim",
     url = "https://github.com/lewis6991/impatient.nvim"
-  },
-  ["lspkind-nvim"] = {
-    loaded = false,
-    needs_bufread = false,
-    only_cond = false,
-    path = "/home/essamgouda97/.local/share/nvim/site/pack/packer/opt/lspkind-nvim",
-    url = "https://github.com/onsails/lspkind-nvim"
   },
   ["lualine.nvim"] = {
     loaded = true,
-    path = "/home/essamgouda97/.local/share/nvim/site/pack/packer/start/lualine.nvim",
+    path = "/home/egouda/.local/share/nvim/site/pack/packer/start/lualine.nvim",
     url = "https://github.com/hoob3rt/lualine.nvim"
+  },
+  ["mason-lspconfig.nvim"] = {
+    loaded = true,
+    path = "/home/egouda/.local/share/nvim/site/pack/packer/start/mason-lspconfig.nvim",
+    url = "https://github.com/williamboman/mason-lspconfig.nvim"
+  },
+  ["mason.nvim"] = {
+    loaded = true,
+    path = "/home/egouda/.local/share/nvim/site/pack/packer/start/mason.nvim",
+    url = "https://github.com/williamboman/mason.nvim"
   },
   ["neosolarized.nvim"] = {
     loaded = true,
-    path = "/home/essamgouda97/.local/share/nvim/site/pack/packer/start/neosolarized.nvim",
+    path = "/home/egouda/.local/share/nvim/site/pack/packer/start/neosolarized.nvim",
     url = "https://github.com/svrana/neosolarized.nvim"
   },
   ["packer.nvim"] = {
     loaded = false,
     needs_bufread = false,
-    path = "/home/essamgouda97/.local/share/nvim/site/pack/packer/opt/packer.nvim",
+    path = "/home/egouda/.local/share/nvim/site/pack/packer/opt/packer.nvim",
     url = "https://github.com/wbthomason/packer.nvim"
   },
   ["vim-python-pep8-indent"] = {
     loaded = false,
     needs_bufread = false,
     only_cond = false,
-    path = "/home/essamgouda97/.local/share/nvim/site/pack/packer/opt/vim-python-pep8-indent",
+    path = "/home/egouda/.local/share/nvim/site/pack/packer/opt/vim-python-pep8-indent",
     url = "https://github.com/Vimjas/vim-python-pep8-indent"
   },
   ["vim-pythonsense"] = {
     loaded = false,
     needs_bufread = true,
     only_cond = false,
-    path = "/home/essamgouda97/.local/share/nvim/site/pack/packer/opt/vim-pythonsense",
+    path = "/home/egouda/.local/share/nvim/site/pack/packer/opt/vim-pythonsense",
     url = "https://github.com/jeetsukumaran/vim-pythonsense"
   },
   ["vim-swap"] = {
     loaded = false,
     needs_bufread = false,
     only_cond = false,
-    path = "/home/essamgouda97/.local/share/nvim/site/pack/packer/opt/vim-swap",
+    path = "/home/egouda/.local/share/nvim/site/pack/packer/opt/vim-swap",
     url = "https://github.com/machakann/vim-swap"
   }
 }
@@ -140,11 +143,11 @@ vim.cmd [[augroup packer_load_aucmds]]
 vim.cmd [[au!]]
   -- Filetype lazy-loads
 time([[Defining lazy-load filetype autocommands]], true)
-vim.cmd [[au FileType python ++once lua require("packer.load")({'vim-python-pep8-indent', 'vim-pythonsense'}, { ft = "python" }, _G.packer_plugins)]]
+vim.cmd [[au FileType python ++once lua require("packer.load")({'vim-pythonsense', 'vim-python-pep8-indent'}, { ft = "python" }, _G.packer_plugins)]]
 time([[Defining lazy-load filetype autocommands]], false)
   -- Event lazy-loads
 time([[Defining lazy-load event autocommands]], true)
-vim.cmd [[au VimEnter * ++once lua require("packer.load")({'lspkind-nvim', 'vim-swap'}, { event = "VimEnter *" }, _G.packer_plugins)]]
+vim.cmd [[au VimEnter * ++once lua require("packer.load")({'vim-swap'}, { event = "VimEnter *" }, _G.packer_plugins)]]
 time([[Defining lazy-load event autocommands]], false)
 vim.cmd("augroup END")
 

@@ -55,8 +55,8 @@ packer.startup(function(use)
   use 'hoob3rt/lualine.nvim' -- Statusline 
 
   -- LSP
-  use { "onsails/lspkind-nvim" , event = "VimEnter"}
-
+  use 'williamboman/mason.nvim'    
+  use 'williamboman/mason-lspconfig.nvim' 
     
   -- Python indent (follows the PEP8 style)
   use { "Vimjas/vim-python-pep8-indent", ft = { "python" } }
