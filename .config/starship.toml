@@ -8,7 +8,7 @@ symbol = " "
 
 [dart]
 symbol = " "
-format = "via [$symbol]($style)"
+format = "[$symbol]($style)"
 
 [directory]
 read_only = " "

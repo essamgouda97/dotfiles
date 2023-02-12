@@ -54,10 +54,25 @@ packer.startup(function(use)
   }
   use 'hoob3rt/lualine.nvim' -- Statusline 
 
+  -- Completion framework
+  use 'hrsh7th/nvim-cmp'
+
   -- LSP
   use 'williamboman/mason.nvim'    
   use 'williamboman/mason-lspconfig.nvim' 
-    
+  use 'neovim/nvim-lspconfig'
+  use 'simrat39/rust-tools.nvim'
+  use 'hrsh7th/cmp-nvim-lsp'
+
+  -- Useful completion sources:
+  use 'hrsh7th/cmp-nvim-lua'
+  use 'hrsh7th/cmp-nvim-lsp-signature-help'
+  use 'hrsh7th/cmp-vsnip'                             
+  use 'hrsh7th/cmp-path'                              
+  use 'hrsh7th/cmp-buffer'                            
+  use 'hrsh7th/vim-vsnip'
+
+
   -- Python indent (follows the PEP8 style)
   use { "Vimjas/vim-python-pep8-indent", ft = { "python" } }
 
