@@ -72,6 +72,9 @@ packer.startup(function(use)
   use 'hrsh7th/cmp-buffer'                            
   use 'hrsh7th/vim-vsnip'
 
+  -- Extra plugins
+  -- use 'nvim-telescope/telescope.nvim'
+  -- use 'phaazon/hop.nvim'
 
   -- Python indent (follows the PEP8 style)
   use { "Vimjas/vim-python-pep8-indent", ft = { "python" } }
