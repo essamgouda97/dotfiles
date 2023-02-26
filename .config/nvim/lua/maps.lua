@@ -2,6 +2,9 @@ local keymap = vim.keymap
 
 -- FORMAT keymap.set(MODE, KEY, ACTION)
 
+-- Use leader v to enter visual mode
+keymap.set('n', '<leader>v', 'v')
+
 -- Do not yank with x
 keymap.set('n', 'x', '"_x')
 
@@ -9,8 +12,6 @@ keymap.set('n', 'x', '"_x')
 keymap.set('n', '+', '<C-a>')
 keymap.set('n', '-', '<C-x>')
 
--- Delete a word backwards
-keymap.set('n', 'dw', 'vb"_d')
 
 -- Select all
 keymap.set('n', '<C-a>', 'gg<S-v>G')

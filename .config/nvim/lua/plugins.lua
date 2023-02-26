@@ -73,7 +73,10 @@ packer.startup(function(use)
   use 'hrsh7th/vim-vsnip'
 
   -- Extra plugins
-  -- use 'nvim-telescope/telescope.nvim'
+  use {
+    'nvim-telescope/telescope.nvim',
+    requires = { {'nvim-lua/plenary.nvim'} }
+  }
   -- use 'phaazon/hop.nvim'
 
   -- Python indent (follows the PEP8 style)

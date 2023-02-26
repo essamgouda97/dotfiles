@@ -19,7 +19,7 @@ symbol = " "
 
 [elixir]
 symbol = " "
-format = 'via [$symbol]($style)'
+format = '[$symbol]($style)'
 
 [elm]
 symbol = " "
@@ -29,14 +29,14 @@ symbol = " "
 
 [golang]
 symbol = " "
-format = 'via [$symbol]($style)'
+format = '[$symbol]($style)'
 
 [hg_branch]
 symbol = " "
 
 [java]
 symbol = " "
-format = 'via [$symbol]($style)'
+format = '[$symbol]($style)'
 
 [julia]
 symbol = " "
@@ -52,7 +52,7 @@ symbol = " "
 
 [nodejs]
 symbol = " "
-format = 'via [$symbol]($style)'
+format = '[$symbol]($style)'
 
 [package]
 symbol = " "
@@ -65,13 +65,13 @@ symbol = " "
 
 [python]
 symbol = " "
-format = 'via [$symbol]($style)'
+format = '[$symbol]($style)'
 
 [ruby]
 symbol = " "
 
 [rust]
-format = 'via [$symbol]($style)'
+format = '[$symbol]($style)'
 
 [scala]
 symbol = " "
@@ -81,7 +81,7 @@ symbol = " "
 
 [swift]
 symbol = "ﯣ "
-format = 'via [$symbol]($style)'
+format = '[$symbol]($style)'
 
 [git_status]
 disabled = true
