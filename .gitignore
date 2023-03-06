@@ -1,6 +1,9 @@
 /*
 !/.gitignore
-!/.config
+!/.config/nvim
+!/.config/tmux
+!/.config/starship.toml
 !/.scripts
 .config/github-copilot
 
+.cfg
