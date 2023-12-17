@@ -6,7 +6,7 @@ set -eaxo pipefail
 sudo apt-get install neovim tmux zsh fontconfig unzip -y
 
 : ====== Install oh-my-zsh ======
-# sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 : ====== Install zsh plugins ======
 sudo apt-get install fonts-hack-ttf exa -y
